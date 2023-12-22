@@ -1,0 +1,208 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    /* font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    min-height: 100vh;
+    background-color: #202124;
+  }
+  .main{
+    min-height: 71vh;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+  }
+  .container {
+    text-align: center;
+  }
+  
+  .logo-container img {
+    width: 272px; /* Adjust based on the actual size of the Google logo */
+    height: 92px; /* Adjust based on the actual size of the Google logo */
+    margin-bottom: 20px;
+  }
+  .navbar{
+    padding: 1rem;
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .nav{
+    gap: 1rem;
+    display: flex;
+  }
+  .links{
+    display: flex;
+    gap: 1rem;
+  }
+  #dots{
+    background-color: white;
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+  }
+  a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    border-bottom: 0.5px solid transparent;
+  }
+  a:hover{
+    border-bottom: 0.5px solid white;
+  }
+  .account{
+    width: 30px;;
+    border-radius: 25px;
+    background-color: #ef6c00;
+  }
+  #acc{
+    width: 25px;
+  }
+  
+  .search-container {
+    border: 1px solid grey;
+    border-radius: 30px;
+    padding: 3px 10px ;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .search_logo{
+    width: 30px;
+  }
+  #mice , #lens{
+    width: 28px;
+  }
+  
+  #searchInput {
+    font-size: 20px;
+    color: white;
+    background: transparent;
+    padding: 10px;
+    width: 35vw;
+    border: none;
+  }
+  #searchInput:focus{
+    outline: none;
+  }
+  .search-container:focus-within{
+    background-color: #303134;
+    border-color: #303134;
+  }
+  .search-container:hover{
+    background: #303134;
+    border-color:#303134 ;
+  }
+
+  
+  button {
+    /* display: none; */
+    padding: 10px 15px;
+    margin-left: 5px;
+    background-color: #4285f4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .buttons-container button {
+    background-color: #303134;
+    color: white;
+    border:1px solid transparent;
+  }
+  
+  button:hover {
+    border: 1px solid gray;
+  }
+  
+.lang{
+    margin: 1rem 0;
+    color: gray;
+    display: inline-block;
+}
+  .languages{
+    padding: 0.5rem 0;
+    font-size: small;
+    color: #4285f4;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+  .languages a{
+    color: #4285f4;
+  }
+  footer{
+    color: #e8eaed;
+    width: 100%;
+    /* position: absolute; */
+    /* bottom: 0px; */
+    background-color: #171717;
+  }
+  .foot1{
+    border-bottom: 1px solid gray;
+    padding: 1rem;
+  }
+
+  .foot2{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+
+  .left{
+    display: flex;
+    gap: 20px;  
+   }
+  .right{
+    display: flex;
+    gap: 20px;  
+   }
+
+
+   @media screen and (max-width: 550px){
+    footer{
+        position: relative;
+    }
+    .foot2{
+        flex-direction: column;
+    }
+    .right, .left{
+        font-size: smaller;
+        padding: 0.5rem;
+        /* flex-direction: column; */
+    }
+    .search-container{
+        justify-content: space-between;
+    }
+    #searchInput{
+        width: 100%;
+    }
+    .languages{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+    }
+    .navbar{
+        display: block;
+        /* justify-content: center; */
+    }
+    .nav{
+        justify-content: space-between;
+    }
+    #flask{
+        display: none;
+    }
+    .links{
+        margin-right: auto;
+    }
+   }
