@@ -1,6 +1,6 @@
 # Google Search Page Clone
 
-![Google Search Clone]
+![Google Search Clone](url_to_your_image.png)
 
 This project is a simple clone of the Google Search page, created using HTML, CSS, and Vanilla JavaScript. The goal was to replicate the visual appearance and basic functionality of the Google Search page.
 
@@ -25,4 +25,4 @@ This project is a simple clone of the Google Search page, created using HTML, CS
 1. Clone the repository to your local machine.
 
    ```bash
-   git clone https://github.com/your-username/your-repo.git
+   git clone https://github.com/parthtiwar-i/GoogleSearchClone.git
